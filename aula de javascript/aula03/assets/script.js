@@ -65,14 +65,12 @@ function calcularImovel(metragem, quartos) {
         case 3:
             preco = metragem * m2 * 1.5;
             break;
-        default:
-            preco = metragem * m2;
     }
 
     return preco;
 }
 
 let metragem = 123;
-let quartos = 3;
+let quartos = 2;
 let preco = calcularImovel(metragem, quartos);
 console.log(`A casa custa R$ ${preco}`);
