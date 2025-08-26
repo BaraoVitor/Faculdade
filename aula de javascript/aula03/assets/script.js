@@ -1,4 +1,5 @@
 // primeiro 
+
 // //function nomeCompleto(nome, sobrenome){ 
 //     return( `${nome} ${sobrenome}`)
 // };
@@ -8,6 +9,7 @@
 // console.log(nome)
 
 // segundo
+
 // function maiorIdade(idade){
 //     if(idade >= 18){
 //         return true
@@ -34,6 +36,8 @@
 // let calculo = calcular(custodoproduto,desconto)
 // console.log(`Um desconto de R$: ${desconto}, representa ${calculo}% do valor do produto, que custa R$ ${custodoproduto}`)
 
+//exercicio 
+
 // let profissional = "Fiscal"
 // console.log(`A sua profissao e: ${profissional}`)
 
@@ -51,28 +55,49 @@
 //         console.log(`Sua camisa sera preta`)
 //         break;
 //}
-function calcularImovel(metragem, quartos) {
-    let m2 = 3000;
-    let preco = 0;
 
-    switch (quartos) {
-        case 1:
-            preco = metragem * m2 * 1;
-            break;
-        case 2:
-            preco = metragem * m2 * 1.2;
-            break;
-        case 3:
-            preco = metragem * m2 * 1.5;
-            break;
-        default:
-            preco = metragem * m2;
+//exercicio 
+
+// function calcularImovel(metragem, quartos) {
+//     let m2 = 3000;
+//     let preco = 0;
+
+//     switch (quartos) {
+//         case 1:
+//             preco = metragem * m2 * 1;
+//             break;
+//         case 2:
+//             preco = metragem * m2 * 1.2;
+//             break;
+//         case 3:
+//             preco = metragem * m2 * 1.5;
+//             break;
+//         default:
+//             preco = metragem * m2;
+//     }
+
+//     return preco;
+// }
+
+// let metragem = 123;
+// let quartos = 4;
+// let preco = calcularImovel(metragem, quartos);
+// console.log(`A casa custa R$ ${preco}`);
+
+//exercicio 
+
+function validar(usuario, senha) {
+    if (usuario === "admin" && senha === "123"){
+        return true
+    }else{
+        return false
     }
-
-    return preco;
+};
+let usuario = "Vitor"
+let senha = "123456"
+let validacao = validar(usuario,senha)
+if (validacao){
+    console.log("Acesso concedido")
+}else{
+    console.log("acesso negado")
 }
-
-let metragem = 123;
-let quartos = 4;
-let preco = calcularImovel(metragem, quartos);
-console.log(`A casa custa R$ ${preco}`);
