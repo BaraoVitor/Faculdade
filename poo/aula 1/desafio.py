@@ -1,8 +1,12 @@
-saldo = 0
+class Banco:
+    def __init__(self):
+        self.saldo = 0
+    def depositar(self,valor):
+        self.saldo += valor
+        print("Saldo:",self.saldo)
 
-class banco:
-    def depositar(valor):
-    global saldo
-    saldo += valor
-    print("Saldo",saldo)
-depositar(100)
+conta = Banco()
+conta.depositar(100)
+
+
+
