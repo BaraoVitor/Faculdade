@@ -149,5 +149,6 @@ cars.sort((a,b) => {
         }
 
 })
+cars.sort((a , b) => a.years - b.years)
 
 console.log(cars)
