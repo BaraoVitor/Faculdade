@@ -4,7 +4,20 @@ from random import randint
 class Personagem:
     def __init__(self, nome, vida):
         self.nome = nome
-        self.vida = vida
+        self._vida = vida
+    # Getter (permite ler a vida)
+    def get_vida(self):
+        return self._vida
+    def set_vida(self, valor):
+        if valor <0:
+            self._vida = 0
+        
+        elif valor > 100: #limite (opcional)
+            self._vida = 100
+        else:
+            self._vida = valor
+
+    vida = property(get_vida, set_vida)
     def atacar(self):
     #metodo Generico - Subercrito pelas subclasses
         return 0
